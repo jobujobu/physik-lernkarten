@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f3fc">
+<meta name="description" content="23 Lernkarten für Physik in der 7. Klasse: Kräfte, Federn und Gewichtskraft.">
+<title>Physik, klar. · 23 Lernkarten</title>
+<style>
+:root{color-scheme:light;--bg:#f5f3fc;--ink:#26233b;--muted:#656078;--purple:#6444c4;--line:#ded9ec;--green:#247253}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,select{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}
+button,select{touch-action:manipulation}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #c48018;outline-offset:4px}
+[hidden]{display:none!important}
+main{max-width:800px;margin:auto;padding:44px 24px 30px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:28px}
+.eyebrow{color:var(--purple);font-weight:700;letter-spacing:.12em;font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(30px,6vw,42px);line-height:1.2;letter-spacing:-.045em;margin:7px 0}
+.subtitle{color:var(--muted);margin:0;font-size:15px}
+.mark{width:58px;height:58px;border-radius:18px;background:#e9e2ff;display:grid;place-items:center;color:var(--purple);flex-shrink:0}
+.progress-label{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:9px}
+progress{display:block;appearance:none;width:100%;height:8px;border:0;border-radius:20px;overflow:hidden;background:#e2ddec}
+progress::-webkit-progress-bar{background:#e2ddec}progress::-webkit-progress-value{background:var(--green);border-radius:20px}progress::-moz-progress-bar{background:var(--green)}
+.stats{color:var(--muted);font-size:12px;margin:8px 0 24px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+select,.light{border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);padding:10px 14px;min-height:44px}
+.filter{display:flex;align-items:center;gap:9px;font-size:14px}.light:hover{background:#ede8fa}.light[aria-pressed=true]{background:#e9e2ff;border-color:var(--purple)}
+.card{background:white;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 12px 35px #30215007}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:13px;margin-bottom:28px}
+.topic{border-radius:20px;background:#f0ecfb;padding:4px 12px;color:#584286}
+.status{font-size:12px;color:var(--muted);min-height:20px}
+h2{font-size:clamp(23px,4.5vw,29px);line-height:1.4;letter-spacing:-.02em;margin:6px 0 26px}
+.answer{border-top:1px solid var(--line);padding-top:20px;margin-top:4px}
+.answer-label{color:var(--purple);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:750}
+.answer p{white-space:pre-line;font-size:19px;line-height:1.65;margin:10px 0 24px}
+.primary{border:1px solid var(--purple);background:var(--purple);color:white;border-radius:13px;padding:13px 20px;font-weight:650;min-height:50px}
+.primary:hover{background:#5134aa}
+.reveal{width:100%}.hint{font-size:13px;color:var(--muted);text-align:center;margin:10px 0 0}
+.rating{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rating button{min-height:52px;border-radius:13px;padding:12px;font-weight:650}
+.again{border:1px solid #e9cf9f;background:#fff7e8;color:#845515}.known{border:1px solid #b5d6c6;background:#eaf6ef;color:#236547}
+.again:hover{background:#faedd2}.known:hover{background:#d9efdf}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}
+.nav button{background:transparent;border:0;color:var(--muted);padding:10px 0;min-height:44px}
+.nav button:hover:enabled{color:var(--purple)}.nav span{font-size:12px;color:var(--muted);text-align:center}
+.complete{text-align:center;padding:38px 28px}.complete h2{margin:12px 0}
+.complete p{color:var(--muted)}.complete .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{margin-top:30px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;color:var(--muted);font-size:12px}
+footer p{margin:0;max-width:480px}footer button{border:0;background:none;color:var(--muted);text-decoration:underline;white-space:nowrap;padding:0;min-height:30px;font-size:12px}
+.notice{font-size:13px;color:#845515;margin-top:14px}
+noscript{display:block;padding:20px;background:white}
+@media(max-width:540px){main{padding:24px 16px}.mark{display:none}header{margin-bottom:24px}.card{padding:22px 20px;border-radius:20px}.card-top{margin-bottom:20px}.toolbar{align-items:stretch}.filter{gap:6px}select,.light{padding:9px 10px;font-size:14px}.rating{gap:8px}.rating button{font-size:14px}.nav span{display:none}footer{flex-direction:column;gap:10px}.stats{margin-bottom:18px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div><div class="eyebrow">Deine Lernkarten · Klasse 7</div><h1>Physik, klar.</h1><p class="subtitle">Kräfte, Federn &amp; Gewichtskraft</p></div>
+<div class="mark" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 40 40" fill="none"><path d="M10 5h20M20 5v4l-8 4 16 5-16 5 16 5-8 4v3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="36" r="2" fill="currentColor"/></svg></div>
+</header>
+<noscript>Bitte aktiviere JavaScript, um die Lernkarten aufzudecken und zu üben.</noscript>
+<div id="app" hidden>
+<div class="progress-label"><strong id="progressText"></strong><span id="percent"></span></div>
+<progress id="progress" max="23" value="0" aria-label="Bereits gekonnte Karten"></progress>
+<p class="stats" id="stats"></p>
+<div class="toolbar">
+<label class="filter" for="filter">Lernen:<select id="filter"><option value="all">Alle Karten</option><option value="open">Offene Karten</option></select></label>
+<button class="light" id="shuffle" type="button" aria-pressed="false">Mischen</button>
+</div>
+<section id="study" class="card" aria-label="Lernkarte">
+<div class="card-top"><span id="position"></span><span class="topic" id="topic"></span></div>
+<div id="questionArea" aria-live="polite" aria-atomic="true"><div class="status" id="status"></div><h2 id="question"></h2></div>
+<button id="reveal" class="primary reveal" type="button" aria-expanded="false" aria-controls="answer">Antwort aufdecken</button>
+<p class="hint" id="hint">Erst selbst überlegen, dann umdrehen.</p>
+<div class="answer" id="answer" hidden aria-live="polite">
+<div class="answer-label">Die Antwort</div><p id="answerText"></p>
+<div class="rating"><button class="again" id="again" type="button">↻ Noch üben</button><button class="known" id="known" type="button">✓ Kann ich</button></div>
+</div>
+</section>
+<section id="complete" class="card complete" hidden aria-live="polite">
+<div class="eyebrow">Kurze Pause</div><h2 id="completeTitle"></h2><p id="completeText"></p>
+<div class="actions"><button id="repeat" class="primary" type="button">Offene Karten üben</button><button id="restart" class="light" type="button">Alle noch einmal</button></div>
+</section>
+<div class="nav" id="navigation"><button id="previous" type="button">← Zurück</button><span>Aufdecken · Einschätzen · Weiterlernen</span><button id="next" type="button">Weiter →</button></div>
+<p id="notice" class="notice" role="status" hidden></p>
+<footer><p>Dein Lernstand bleibt in diesem Browser. Auf einem anderen Gerät beginnst du neu. Ohne Anmeldung, ohne Werbung.</p><button id="reset" type="button">Lernstand zurücksetzen</button></footer>
+<div id="resetConfirm" hidden role="group" aria-label="Lernstand zurücksetzen"><p>Alle Bewertungen in diesem Browser löschen?</p><button class="light" id="cancelReset" type="button">Abbrechen</button> <button class="primary" id="confirmReset" type="button">Ja, zurücksetzen</button></div>
+</div>
+</main>
+<script>
+"use strict";
+const cards = [
+  {
+    "number": 1,
+    "question": "Was besagt das Hooke’sche Gesetz?",
+    "answer": "Je größer die Kraft, desto größer die Verlängerung einer Feder – im elastischen Bereich proportional."
+  },
+  {
+    "number": 2,
+    "question": "Wie lautet die Formel des Hooke’schen Gesetzes?",
+    "answer": "F = D · s\nF: Kraft, D: Federkonstante, s: Verlängerung."
+  },
+  {
+    "number": 3,
+    "question": "Wie berechnet man die Federkonstante D?",
+    "answer": "D = F / s\nBeispiel: 12 N / 3 cm = 4 N/cm."
+  },
+  {
+    "number": 4,
+    "question": "Wie berechnet man die Verlängerung s?",
+    "answer": "s = F / D\nBeispiel: 20 N / (5 N/cm) = 4 cm."
+  },
+  {
+    "number": 5,
+    "question": "Was gibt die Federkonstante D an?",
+    "answer": "Wie viel Kraft für eine bestimmte Verlängerung nötig ist. Je größer D, desto härter die Feder."
+  },
+  {
+    "number": 6,
+    "question": "Was bedeutet eine Federkonstante von 30 N/cm?",
+    "answer": "Für jeden Zentimeter Verlängerung braucht man 30 N Kraft."
+  },
+  {
+    "number": 7,
+    "question": "In welcher Einheit wird die Kraft gemessen?",
+    "answer": "In Newton (N)."
+  },
+  {
+    "number": 8,
+    "question": "Was bedeutet „proportional“?",
+    "answer": "Verdoppelt sich die Kraft, verdoppelt sich auch die Verlängerung."
+  },
+  {
+    "number": 9,
+    "question": "Woran erkennt man Proportionalität im s-F-Diagramm?",
+    "answer": "An einer Geraden durch den Ursprung (0|0)."
+  },
+  {
+    "number": 10,
+    "question": "Was steht im s-F-Diagramm auf den Achsen?",
+    "answer": "Waagerecht: Verlängerung s.\nSenkrecht: Kraft F."
+  },
+  {
+    "number": 11,
+    "question": "Was ist der elastische Bereich?",
+    "answer": "Der Bereich, in dem ein Körper nach Entlastung wieder seine ursprüngliche Form annimmt."
+  },
+  {
+    "number": 12,
+    "question": "Was geschieht bei Überschreitung der Elastizitätsgrenze?",
+    "answer": "Der Körper kann dauerhaft verformt bleiben oder reißen."
+  },
+  {
+    "number": 13,
+    "question": "Warum eignet sich ein Gummiband schlecht als Kraftmesser?",
+    "answer": "Seine Verlängerung ist nicht gleichmäßig proportional zur Kraft."
+  },
+  {
+    "number": 14,
+    "question": "Wie berechnet man die Gewichtskraft?",
+    "answer": "F_G = m · g\nMasse mal Ortsfaktor."
+  },
+  {
+    "number": 15,
+    "question": "Wie berechnet man die Masse aus der Gewichtskraft?",
+    "answer": "m = F_G / g"
+  },
+  {
+    "number": 16,
+    "question": "Was ist der Ortsfaktor g auf der Erde?",
+    "answer": "Etwa 9,81 N/kg. In Schulaufgaben oft gerundet auf 10 N/kg."
+  },
+  {
+    "number": 17,
+    "question": "Was ist der Ortsfaktor auf dem Mond?",
+    "answer": "Etwa 1,62 N/kg. Die Gewichtskraft ist rund sechsmal kleiner als auf der Erde."
+  },
+  {
+    "number": 18,
+    "question": "Was ist der Unterschied zwischen Masse und Gewichtskraft?",
+    "answer": "Masse: Maß für die Trägheit eines Körpers, in kg gemessen und überall gleich.\nGewichtskraft: Kraft in N, vom Ort abhängig."
+  },
+  {
+    "number": 19,
+    "question": "Wie groß ist die Gewichtskraft von 2 kg auf der Erde?",
+    "answer": "Etwa 20 N.\nF_G = 2 kg · 10 N/kg."
+  },
+  {
+    "number": 20,
+    "question": "Wo ist die Ausrüstung leichter: Nordpol oder Kilimandscharo?",
+    "answer": "Auf dem Kilimandscharo, weil sie weiter vom Erdmittelpunkt entfernt ist."
+  },
+  {
+    "number": 21,
+    "question": "Kann man die Masse auf dem Mond mit einer Balkenwaage messen?",
+    "answer": "Ja. Sie vergleicht Massen. Der kleinere Ortsfaktor wirkt auf beiden Seiten gleich."
+  },
+  {
+    "number": 22,
+    "question": "Kann man die Masse auf dem Mond nur mit einem Kraftmesser bestimmen?",
+    "answer": "Ohne Kenntnis des Ortsfaktors nicht. Man benötigt m = F_G / g."
+  },
+  {
+    "number": 23,
+    "question": "Ziehen sich alle Körper gegenseitig an?",
+    "answer": "Ja. Diese Anziehung heißt Gravitation. Bei kleinen Massen ist sie sehr schwach."
+  }
+];
+const storageKey = "physik-klasse7-test-v1";
+const $ = id => document.getElementById(id);
+let states = {};
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+  if (saved && typeof saved === "object" && !Array.isArray(saved)) {
+    for (const card of cards) if (["known","again"].includes(saved[card.number])) states[card.number] = saved[card.number];
+  }
+} catch { storageNotice(); }
+let deck = [], index = 0, shuffled = false, revealed = false;
+function storageNotice() {
+  $("notice").hidden = false;
+  $("notice").textContent = "Dein Browser kann den Lernstand gerade nicht dauerhaft speichern. Du kannst trotzdem für diese Sitzung üben.";
+}
+function save() { try { localStorage.setItem(storageKey, JSON.stringify(states)); } catch { storageNotice(); } }
+function countKnown() { return cards.filter(c => states[c.number] === "known").length; }
+function updateProgress() {
+  const known = countKnown(), again = cards.filter(c => states[c.number] === "again").length;
+  $("progressText").textContent = known + " von 23 kannst du schon";
+  $("percent").textContent = Math.round(known / cards.length * 100) + " %";
+  $("progress").value = known;
+  $("stats").textContent = (cards.length - known - again) + " ungelernt · " + again + " noch üben · " + known + " gekonnt";
+}
+function startDeck() {
+  deck = cards.filter(c => $("filter").value === "all" || states[c.number] !== "known");
+  if (shuffled) {
+    for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i],deck[j]] = [deck[j],deck[i]]; }
+  }
+  index = 0; render();
+}
+function render(focus = false) {
+  updateProgress(); revealed = false;
+  const finished = index >= deck.length;
+  $("study").hidden = finished; $("complete").hidden = !finished; $("navigation").hidden = finished;
+  if (finished) {
+    const remaining = cards.length - countKnown();
+    $("completeTitle").textContent = remaining ? "Runde geschafft." : "Alle 23 Karten gekonnt!";
+    $("completeText").textContent = remaining ? (remaining === 1 ? "Noch eine offene Karte. Wiederhole sie in deinem Tempo." : "Noch " + remaining + " offene Karten. Wiederhole sie in deinem Tempo.") : "Du hast jede Karte als gekonnt markiert. Wiederhole sie später noch einmal.";
+    $("repeat").hidden = !remaining;
+    if (focus) (remaining ? $("repeat") : $("restart")).focus();
+    return;
+  }
+  const card = deck[index];
+  $("position").textContent = "Karte " + (index + 1) + " / " + deck.length;
+  $("topic").textContent = card.number < 14 ? "Kräfte & Federn" : "Masse & Gewichtskraft";
+  $("status").textContent = states[card.number] === "known" ? "Schon gekonnt" : states[card.number] === "again" ? "Noch einmal üben" : "Noch nicht bewertet";
+  $("question").textContent = card.question;
+  $("answerText").textContent = card.answer;
+  $("answer").hidden = true; $("reveal").hidden = false; $("hint").hidden = false;
+  $("reveal").setAttribute("aria-expanded","false");
+  $("previous").disabled = index === 0;
+  $("next").textContent = index === deck.length - 1 ? "Runde beenden →" : "Weiter →";
+  if (focus) $("reveal").focus();
+}
+function rate(value) {
+  if (!revealed || index >= deck.length) return;
+  states[deck[index].number] = value;
+  save(); index++; render(true);
+}
+$("reveal").addEventListener("click", () => {
+  revealed = true; $("answer").hidden = false; $("hint").hidden = true;
+  $("reveal").setAttribute("aria-expanded","true"); $("reveal").hidden = true;
+  $("again").focus();
+});
+$("again").addEventListener("click", () => rate("again"));
+$("known").addEventListener("click", () => rate("known"));
+$("previous").addEventListener("click", () => { if (index > 0) { index--; render(true); } });
+$("next").addEventListener("click", () => { if (index < deck.length) { index++; render(true); } });
+$("filter").addEventListener("change", startDeck);
+$("shuffle").addEventListener("click", () => { shuffled = !shuffled; $("shuffle").setAttribute("aria-pressed", String(shuffled)); startDeck(); });
+$("repeat").addEventListener("click", () => { $("filter").value = "open"; startDeck(); $("reveal").focus(); });
+$("restart").addEventListener("click", () => { $("filter").value = "all"; startDeck(); $("reveal").focus(); });
+$("reset").addEventListener("click", () => { $("resetConfirm").hidden = false; $("cancelReset").focus(); });
+$("cancelReset").addEventListener("click", () => { $("resetConfirm").hidden = true; $("reset").focus(); });
+$("confirmReset").addEventListener("click", () => { states = {}; save(); $("resetConfirm").hidden = true; startDeck(); $("reveal").focus(); });
+$("app").hidden = false;
+startDeck();
+</script>
+</body>
+</html>
+
